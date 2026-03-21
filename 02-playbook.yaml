@@ -3,4 +3,5 @@
   hosts: Web
   tasks:
   - name: To gather facts of the web server
-    ansible.builtin.debug: gather_facts
+    ansible.builtin.debug:
+      var: gather_facts
