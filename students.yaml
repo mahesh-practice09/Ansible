@@ -1,0 +1,13 @@
+---
+# This is the one list Item
+- name: "Jeevika Ganji" #This is Map (Dictionary)
+  dob: 2021-10-14 # This is Key value pair
+  mobilenumber: 9789995789
+  # Address is list of items with Dictionaries
+  addresses:
+  - name: permanent address 1
+    flatno: 234
+    colony: hudasainagar
+  - name: permanent address 2
+    flatno: 407
+    colony: bachupally
