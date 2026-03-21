@@ -1,0 +1,9 @@
+---
+- name: Prints Variable Information
+  hosts: web
+  vars_file:
+  - course.yaml
+  tasks:
+  - name: Print Variable Info
+    ansible.builtin.debug:
+      msg: Course {{ COURSE }} will complete in {{ DAYS }} by {{ TUTOR }}
