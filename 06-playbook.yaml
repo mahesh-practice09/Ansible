@@ -1,7 +1,7 @@
 ---
 - name: Prints Variable Information
   hosts: web
-  vars_file:
+  vars_files:
   - course.yaml
   tasks:
   - name: Print Variable Info
