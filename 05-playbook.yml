@@ -1,0 +1,13 @@
+---
+- name: Prints Variable Information
+  hosts: web
+  vars:
+    COURSE: DEVOPS
+    DAYS: "120 Days"
+    TUTOR: Siva
+  tasks:
+  - name: Print Variable Info
+    vars:
+      COURSE: Ansible
+    ansible.builtin.debug:
+      msg: Course {{ COURSE }} will complete in {{ DAYS }} by {{ TUTOR }}
