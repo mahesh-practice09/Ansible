@@ -5,4 +5,4 @@
   tasks:
   - name: print variables from inventory
     ansible.builtin.debug:
-      msg: { ? { COURSE } }
+      msg: course {{ COURSE }}
