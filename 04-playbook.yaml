@@ -4,8 +4,8 @@
   vars:
     COURSE: "DEVOPS"
     DAYS: "120 Days"
-    TUTOR: "Siva"
+    TUTOR: Siva
   tasks:
   - name: Print Variable Info
     ansible.builtin.debug:
-      msg: Course {{ COURSE }} will complete in {{ DAYS }} days by {{ TUTOR }}"
+      msg: Course {{ COURSE }} will complete in {{ DAYS }} by {{ TUTOR }}"
