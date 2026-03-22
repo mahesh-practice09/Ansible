@@ -1,0 +1,9 @@
+---
+- name: strings to list
+  hosts: local
+  connection: local
+  vars:
+    topic: linux, ansible, terraform shell
+  tasks:
+   - name: convert strings to list
+     ansible.builtin.split:  "{{ topic | split(',')}}"
