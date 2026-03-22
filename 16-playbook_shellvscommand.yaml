@@ -1,10 +1,10 @@
 ---
-- name: ansible shell vs command module
+- name: shell vs command module
   hosts: local
   connection: local
   tasks:
-    - name: command module
-      ansible.builtin.command: cat /etc/passwd | grep root
+    # - name: command module
+    #   ansible.builtin.command: cat /etc/passwd | grep root
 
     - name: shell module
       ansible.builtin.shell: cat /etc/passwd | grep root
