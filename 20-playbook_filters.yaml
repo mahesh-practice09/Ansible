@@ -5,4 +5,4 @@
   tasks:
     - name: use filters ansible
       ansible.builtin.debug:
-        msg: "Hi Mahesh {{ Greetings }}"
+        msg: "Hi Mahesh {{ Greetings | default(Good Morning)}}"
