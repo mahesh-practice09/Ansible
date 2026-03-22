@@ -1,8 +1,9 @@
 ---
 - name: Conditions 
   hosts: local
-  connection: local
-  IS_ALIVE: true
+  connection: 
+  vars:
+   IS_ALIVE: true
   tasks:
    - name: conditions 
      ansible.builtin.debug:
