@@ -1,0 +1,13 @@
+---
+- name: convert dict to items  
+  hosts: local
+  connection: local
+  vars:
+   tags:
+     name: ansible
+     course: devops
+     component: cart
+  tasks:
+   - name: Covert dict to item.state
+     ansible.builtin.debug:
+       msg: "{{ tags | dict2items }}"
