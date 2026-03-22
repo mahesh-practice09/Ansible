@@ -8,4 +8,4 @@
    - name: conditions 
      ansible.builtin.debug:
         msg: "This is Redhat"
-     when: IS_ALIVE == true
+     when: IS_ALIVE   
