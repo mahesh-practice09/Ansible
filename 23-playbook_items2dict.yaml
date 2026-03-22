@@ -4,9 +4,9 @@
   connection: local
   vars:
     tags:
-      - { "key": "name", "value": "terraform" }
-      - { key=course , value: devops }
-      - { key=component, value: cart }
+      - { "key":"name", "value": "terraform" }
+      - { "key": "course" , "value": "devops" }
+      - { "key": "component", "value": "cart" }
 
   tasks:
    - name: Covert dict to item.state
