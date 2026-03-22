@@ -1,5 +1,6 @@
 ---
-- hosts: local
+- name: This contains DataTypes
+  hosts: local
   connection: local
   vars:
     PROGRAM: "DevSecops with AWS"  # string
