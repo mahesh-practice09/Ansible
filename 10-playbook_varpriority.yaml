@@ -9,10 +9,10 @@
   # vars_files:
   #    - course.yaml  
   # variables using vars_prompt 
-  vars_prompt:
-    - name:  COURSE
-      prompt: username
-      private: false
+  # vars_prompt:
+  #   - name:  COURSE
+  #     prompt: username
+  #     private: false
   tasks:
       # variables at play level
     - name: Variables
