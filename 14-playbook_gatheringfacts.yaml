@@ -11,4 +11,4 @@
          var: ansible_facts.distribution
     -
        ansible.builtin.debug:
-         msg: OS is "{{ ansible_facts.distribution }}"
+         msg: "OS is {{ ansible_facts.distribution }}"
