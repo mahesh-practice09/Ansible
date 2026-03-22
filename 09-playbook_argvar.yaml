@@ -1,0 +1,8 @@
+---
+- name: Pass the argument
+  hosts: local
+  connection: local
+  tasks:
+    - name: Pass the argument from ansible command
+      ansible.builtin.debug:
+         msg : "My name is {{ NAME }}"
