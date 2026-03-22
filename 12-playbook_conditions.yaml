@@ -1,7 +1,7 @@
 ---
 - name: Conditions 
   hosts: local
-  connection: 
+  connection: local
   vars:
    IS_ALIVE: true
   tasks:
