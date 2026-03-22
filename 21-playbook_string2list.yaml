@@ -3,7 +3,7 @@
   hosts: local
   connection: local
   vars:
-    topic: linux, ansible, terraform shell
+    topic: linux,ansible,terraform,shell
   tasks:
    - name: convert strings to list
      ansible.builtin.debug:
