@@ -1,0 +1,10 @@
+---
+- name: Condition to check os is redhat
+  hosts: local
+  connection: local
+  tasks:
+    - name: Check if its redhat or not
+      ansible.builtin.debug:
+        msg: "OS is Redhat"
+      when: ansible_facts.distribution == 'Redhat'
+    
