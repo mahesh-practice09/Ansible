@@ -1,0 +1,27 @@
+---
+- name: Check the variables priority 
+  hosts: local
+  connection: local
+  # Variables at play level
+  vars:
+    COURSE: "Devsecops"
+    DURATION: "140"
+    TUTOR: "Shiva"
+  # variables using vars-files
+  vars-files:
+    - course.yaml  
+  # variables using vars_prompt 
+  vars_prompt:
+    - name: provide the username
+      prompt: username
+      private: false
+  tasks:
+      # variables at play level
+    - name: Variables at play level
+      ansible.builtin.debug:
+         msg: " Course is {{ COURSE }} duration {{ DURATION }} by {{ TUTOR }}"
+
+
+
+
+
