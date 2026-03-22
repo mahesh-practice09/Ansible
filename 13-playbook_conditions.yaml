@@ -1,0 +1,12 @@
+---
+- name: Conditions
+  hosts: local
+  connection: local
+  vars:
+    Num_of_sessions=7
+  tasks:
+   - name: Conditions
+     ansible.builtin.debug:
+       msg: "Num of sessions is 7"
+     when: Num_of_sessions > 5
+     
