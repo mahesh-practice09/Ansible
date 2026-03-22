@@ -1,0 +1,12 @@
+---
+- name: convert dict to items  
+  hosts: local
+  connection: local
+  var_files:
+    - students.yaml
+  tasks:
+   - name: Covert dict to item.state
+     ansible.builtin.debug:
+       msg: "{{ students.yaml | ansible.builtin.to_nice_json }}"
+
+       
