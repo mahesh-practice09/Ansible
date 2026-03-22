@@ -1,6 +1,7 @@
 ---
 - name: To gather facts of the web server
-  hosts: localhost
+  hosts: local
+  connection: local
   tasks:
   - name: To gather facts of the web server
     ansible.builtin.debug:
