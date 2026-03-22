@@ -4,9 +4,7 @@
   connection: local
   # Variables at play level
   vars:
-    COURSE: "Devsecops"
-    DURATION: "140"
-    TUTOR: "Shiva"
+    COURSE: "Ansible at play level"
   # variables using vars-files
   vars-files:
     - course.yaml  
@@ -18,8 +16,10 @@
   tasks:
       # variables at play level
     - name: Variables at play level
+      vars:
+        COURSE: "Ansible at Task level"
       ansible.builtin.debug:
-         msg: " Course is {{ COURSE }} duration {{ DURATION }} by {{ TUTOR }}"
+         msg: "MY Course is {{ COURSE }} "
 
 
 
