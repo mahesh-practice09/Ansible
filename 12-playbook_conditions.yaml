@@ -7,5 +7,5 @@
   tasks:
    - name: conditions 
      ansible.builtin.debug:
-       msg: "This is Redhat"
-     when: IS_ALIVE == 'true'
+        msg: "This is Redhat"
+     when: IS_ALIVE == true
