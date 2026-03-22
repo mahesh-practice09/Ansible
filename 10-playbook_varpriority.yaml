@@ -6,8 +6,8 @@
   vars:
     COURSE: 'Ansible at play level'
   # variables using vars-files
-  vars_files:
-     - course.yaml  
+  # vars_files:
+  #    - course.yaml  
   # variables using vars_prompt 
   vars_prompt:
     - name:  COURSE
