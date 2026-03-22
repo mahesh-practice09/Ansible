@@ -4,7 +4,7 @@
   connection: local
   vars:
     tags:
-      - { key=name, value: terraform }
+      - { key="name", value: "terraform" }
       - { key=course , value: devops }
       - { key=component, value: cart }
 
