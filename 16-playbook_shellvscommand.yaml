@@ -5,3 +5,6 @@
   tasks:
     - name: command module
       ansible.builtin.command: cat /etc/passwd | grep root
+
+    - name: shell module
+      ansible.builtin.shell: cat /etc/passwd | grep root
