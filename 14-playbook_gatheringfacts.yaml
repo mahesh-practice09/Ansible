@@ -8,4 +8,4 @@
     #     var: ansible_facts
     -
        ansible.builtin.debug:
-         var: ansible_facts.distribution
+         var: "{{ ansible_facts.distribution }}"
