@@ -2,11 +2,12 @@
 - name: convert dict to items  
   hosts: local
   connection: local
-  vars_files:
-    - students.yaml
   tasks:
-   - name: Covert dict to item.state
+   - name: get file students.yaml
+     include_vars:
+      file: students.yaml
+      name: students_data
      ansible.builtin.debug:
-       msg: "{{ students.yaml | ansible.builtin.to_nice_json }}"
+       msg: "{{ students_data | ansible.builtin.to_nice_json }}"
 
        
