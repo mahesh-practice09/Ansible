@@ -1,0 +1,10 @@
+---
+- name: Conditions 
+  hosts: local
+  connection: local
+  IS_ALIVE: true
+  tasks:
+   - name: conditions 
+     ansible.builtin.debug:
+       msg: "This is Redhat"
+     when: IS_ALIVE == true
