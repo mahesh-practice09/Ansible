@@ -1,0 +1,14 @@
+---
+- name: convert dict to items  
+  hosts: local
+  connection: local
+  vars:
+    tags:
+      - terraform
+      - shellscripting
+      - ansible
+
+  tasks:
+   - name: Covert dict to item.state
+     ansible.builtin.debug:
+       msg: "{{ tags | items2dict }}"
