@@ -8,3 +8,8 @@
 
     - name: shell module
       ansible.builtin.shell: cat /etc/passwd | grep root
+      register: shell_output
+
+    - name: shell output details
+      ansible.builtin.debug:
+        msg: "{{ shell_output }}"
