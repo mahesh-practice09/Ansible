@@ -8,6 +8,6 @@
       file: students.yaml
       name: students_data
      ansible.builtin.debug:
-       msg: "{{ students_data | ansible.builtin.to_nice_json }}"
+       msg: "{{ students_data | to_nice_json }}"
 
        
