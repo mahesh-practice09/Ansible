@@ -16,8 +16,8 @@
   tasks:
       # variables at play level
     - name: Variables at play level
-      vars:
-        COURSE: 'Ansible at Task level'
+      # vars:
+      #   COURSE: 'Ansible at Task level'
       ansible.builtin.debug:
          msg: "MY Course is {{ COURSE }} "
 
