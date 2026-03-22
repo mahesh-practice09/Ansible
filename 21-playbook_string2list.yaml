@@ -6,4 +6,5 @@
     topic: linux, ansible, terraform shell
   tasks:
    - name: convert strings to list
-     ansible.builtin.split:  "{{ topic | split(',')}}"
+     ansible.builtin.debug:
+       msg:  "{{ topic | split(',')}}"
