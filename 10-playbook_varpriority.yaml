@@ -10,7 +10,7 @@
   #    - course.yaml  
   # variables using vars_prompt 
   vars_prompt:
-    - name: provide the username
+    - name: COURSE
       prompt: username
       private: false
   tasks:
