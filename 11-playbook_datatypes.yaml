@@ -1,0 +1,23 @@
+---
+- hosts: local
+  connection: local
+  vars:
+    PROGRAM: "DevSecops with AWS"  # string
+    DURATION: "140" #int or number
+    IS_LIVE: true #bool
+    DETAILS: #Map/Dictionary
+     MONTHS:  4
+     TRAINER: Siva
+    TOPICS:
+      - Shell
+      - Ansible 
+      - Terraform 
+  tasks:
+    - name: print variables
+      ansible.builtin.debug:
+        msg: |
+        Program: "{{ PROGRAM }}"
+        Duration: "{{ DURATION }}"
+        IS_Live: "{{ IS_LIVE }}"
+        Details: "{{ DETAILS }}"
+        Topics: "{{ TOPICS }}"
