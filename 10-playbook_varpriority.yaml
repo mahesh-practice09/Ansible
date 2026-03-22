@@ -3,8 +3,8 @@
   hosts: local
   connection: local
   #Variables at play level
-  vars:
-    COURSE: 'Ansible at play level'
+  # vars:
+  #   COURSE: 'Ansible at play level'
   # variables using vars-files
   # vars_files:
   #    - course.yaml  
