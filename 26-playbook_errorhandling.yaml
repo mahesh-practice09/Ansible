@@ -2,6 +2,7 @@
 - name: check if user exists or not
   hosts: local
   connection: local
+  ignore_errors: true
   tasks:
   - name: check if user roboshop exists or not
     ansible.builtin.command: id roboshop
