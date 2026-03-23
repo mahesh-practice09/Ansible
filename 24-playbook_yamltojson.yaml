@@ -5,7 +5,7 @@
   tasks:
   - name: get file students.yaml
     ansible.builtin.set_fact:
-      students_data: "{{ lookup('file',students.yaml) }}"
+      students_data: "{{ lookup('file',students.yaml) | from_yaml }}"
 
   - name:
     ansible.builtin.debug:
