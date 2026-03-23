@@ -1,6 +1,6 @@
 ---
 - name: check if user exists or not
-  hosts: local
+  hosts: localhost
   connection: local
   ignore_errors: true
   tasks:
