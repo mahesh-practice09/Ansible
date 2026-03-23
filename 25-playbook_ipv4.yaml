@@ -3,7 +3,7 @@
   hosts: local
   connection: local
   vars:
-    ipv4: 192.33.22.11
+    ipv4: 192.33.22.344
   tasks:
   - name: check if it is ipv4
     ansible.builtin.debug:
