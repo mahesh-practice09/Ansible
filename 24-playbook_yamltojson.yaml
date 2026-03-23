@@ -16,3 +16,7 @@
   - name:
     ansible.builtin.debug:
       msg: "{{ Course | lower }}"
+
+  - name:
+    ansible.builtin.debug:
+      msg: "{{ Course | upper }}"
