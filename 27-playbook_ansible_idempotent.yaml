@@ -1,0 +1,9 @@
+---
+- name: Check if ansible is Idempodent
+  hosts: local
+  connection: local
+  tasks:
+  - name: Check if Ansible is Idempodent
+    ansible.builtin.user:
+      name: mahesh
+      state: present
