@@ -1,14 +1,14 @@
 ---
-- name: convert dict to items  
+- name: convert dict to items
   hosts: local
   connection: local
   tasks:
-   - name: get file students.yaml
-     include_vars:
+  - name: get file students.yaml
+    include_vars:
       file: students.yaml
       name: students_data
-   -
-     ansible.builtin.debug:
-       msg: "{{ students_data | to_nice_json }}"
 
-       
+  - name:
+    copy:
+      content: "{{ students_data | to_nice_json }}"
+      dest: students.json
