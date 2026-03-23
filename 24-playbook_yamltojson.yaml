@@ -4,11 +4,9 @@
   connection: local
   tasks:
   - name: get file students.yaml
-    include_vars:
-      file: students.yaml
-      name: students_data
+    ansible.builtin.set_fact:
+      students_data: "{{ lookup('file',students.yaml) }}"
 
   - name:
-    copy:
-      content: "{{ students_data | to_nice_json }}"
-      dest: students.json
+    ansible.builtin.debug:
+      msg: "{{ students_data | to_nice_json }}"
