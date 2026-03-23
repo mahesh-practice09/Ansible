@@ -5,6 +5,6 @@
   vars:
     topic: linux,ansible,terraform,shell
   tasks:
-   - name: convert strings to list
-     ansible.builtin.debug:
-       msg:  "{{ topic | split(',')}}"
+  - name: convert strings to list
+    ansible.builtin.debug:
+      msg: "{{ topic | split(',')}}"

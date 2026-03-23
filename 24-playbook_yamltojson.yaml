@@ -2,6 +2,8 @@
 - name: convert dict to items
   hosts: local
   connection: local
+  vars:
+    Course: "Devops with Ansible"
   tasks:
   - name: get file students.yaml
     ansible.builtin.set_fact:
@@ -10,3 +12,7 @@
   - name:
     ansible.builtin.debug:
       msg: "{{ students_data | to_nice_json }}"
+
+  - name:
+    ansible.builtin.debug:
+      msg: "{{ Course | lower }}"
