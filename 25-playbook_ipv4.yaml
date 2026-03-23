@@ -1,0 +1,10 @@
+---
+- name: check if it is ipv4
+  hosts: local
+  connection: local
+  vars:
+    ipv4: 192.33.22.11
+  tasks:
+  - name: check if it is ipv4
+    ansible.builtin.debug:
+      msg: "{{ ipv4 | ansible.builtin.ipv4 }}"
